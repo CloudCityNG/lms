@@ -1,0 +1,215 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CTF首页</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <link rel="stylesheet" type="text/css" href="css/base.css">
+         <link rel="stylesheet" type="text/css" href="css/media-style.css">
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    </head>
+    <script type="text/javascript">
+//        $(document).ready(function(){
+//		$('#Nav .navition').bind('click',function(){
+//			var thisIndex = $(this).index();
+//			$(this).children('a').addClass('selected').siblings().removeClass('selected');
+//			$('.g-mn1 .g-mn1c').eq(thisIndex).show().siblings().hide();	
+//		})
+//        })
+
+
+$(function(){
+    $("#Login").click(function(){
+        $("#login-tip").css("display","block");
+    })
+    $("#login-tip .l-close").click(function(){
+        $("#login-tip").css("display","none");
+    })
+})
+    </script>
+    <body>
+        <!--登录-->
+     <div class="l-login" id="login-tip">
+         <span class="l-close">×</span>
+         <section class="l-wrap">
+             <h1 class="l-logo"></h1>
+             <form> 
+                 <input type="text" value="username">
+                 <input type="password" value="Password">
+                 <a class="forget-pass" href="#">忘记密码?</a>
+                 <button class="l-blue">登录</button>
+                 <a class="l-register" href="#">注册</a>
+             </form>
+         </section>
+     </div>   
+      
+       <!--登录结束--> 
+        <section id="M-moclist">
+               <div class="g-flow">
+                   <div class="g-container f-cb f-pr">
+                   <!--侧边栏-->
+                   <div class="g-sd1 f-pr">
+                       <div class="b-200"></div>
+                       <ul class="nav" id="Nav">
+<!--                          <li class="u-login f-pr" id="Login">
+                               <a href="#">登录</a>
+                               <span class="u-people"></span>
+                           </li>-->
+                           <li class="navition selected"><a href="index.html">题目</a></li>
+                           <li class="navition"><a href="score-table.html">积分榜</a></li>
+                           <li class="navition"><a href="#">公告</a></li>
+                           <li class="navition"><a href="#">决赛日程</a></li>
+                           <li class="navition"><a href="#">大赛简介</a></li>
+                           <li class="navition"><a href="#">大赛新闻</a></li>
+                           <li class="navition"><a href="#">组织单位</a></li>
+                           <li class="navition"><a href="#">大赛规则</a></li>
+                           <li class="navition"><a href="#">决赛场地</a></li>
+                           <li class="navition"><a href="#">FAQ</a></li>
+                       </ul>
+                   </div>
+                   <!--左侧结束-->
+                   <!--右侧-->
+                   
+                   <div class="g-mn1">
+                       <div class="g-mn1c">
+<!--                              <div class="login">
+                                  <a class="l-submit register">注册</a>
+                                  <input class="l-submit now" type="submit" value="登录">
+                                  
+                                  <input class="login-text" type="text" >
+                                  <input class="login-text password" type="text">
+                                  
+                              </div>-->
+                           <!--题目-->
+                           <div class="j-list lists">
+                                <h3 class="b-title">题目</h3>
+                                <div class="b-15"></div>
+                                <div class="b-course">
+                                    <ul class="b-course-title">
+                                        <li><a href="#">MISC</a></li>
+                                        <li><a href="#">PPC&CRYPTO</a></li>
+                                        <li><a href="#">PWN</a></li>
+                                        <li><a href="#">REVERSE</a></li>
+                                        <li><a href="#">WEB</a></li>
+                                    </ul>
+                                    <div class="b-10"></div>
+                                    <ul class="title-list">
+                                         <li>
+                                             <a href="#">
+                                                 初来乍到
+                                                 <span class="title-num">100</span>
+                                             </a>
+                                             <a href="#">
+                                                 内网探险
+                                                 <span class="title-num">200</span>
+                                             </a>
+                                             <a href="#">
+                                                 诱捕陷阱
+                                                 <span class="title-num">300</span>
+                                             </a>
+                                             <a href="#">
+                                                海报探秘
+                                                 <span class="title-num">500</span>
+                                             </a>
+                                         </li>
+                                         <li> 
+                                             <a href="#">
+                                                 初来乍到
+                                                 <span class="title-num">100</span>
+                                             </a>
+                                             <a href="#">
+                                                 内网探险
+                                                 <span class="title-num">200</span>
+                                             </a>
+                                             <a href="#">
+                                                 诱捕陷阱
+                                                 <span class="title-num">300</span>
+                                             </a>
+                                             <a href="#">
+                                                海报探秘
+                                                 <span class="title-num">500</span>
+                                             </a>
+                                         </li>
+                                         <li>
+                                              <a href="#">
+                                                 初来乍到
+                                                 <span class="title-num">100</span>
+                                             </a>
+                                             <a href="#">
+                                                 内网探险
+                                                 <span class="title-num">200</span>
+                                             </a>
+                                             <a href="#">
+                                                 诱捕陷阱
+                                                 <span class="title-num">300</span>
+                                             </a>
+                                             <a href="#">
+                                                海报探秘
+                                                 <span class="title-num">500</span>
+                                             </a>
+                                              <a href="#">
+                                                海报探秘
+                                                 <span class="title-num">500</span>
+                                             </a>
+                                         </li>
+                                         <li>
+                                              <a href="#">
+                                                 初来乍到
+                                                 <span class="title-num">100</span>
+                                             </a>
+                                             <a href="#">
+                                                 内网探险
+                                                 <span class="title-num">200</span>
+                                             </a>
+                                             <a href="#">
+                                                 诱捕陷阱
+                                                 <span class="title-num">300</span>
+                                             </a>
+                                             <a href="#">
+                                                海报探秘
+                                                 <span class="title-num">500</span>
+                                             </a>
+                                              <a href="#">
+                                                海报探秘
+                                                 <span class="title-num">500</span>
+                                             </a>
+                                         </li>
+                                         <li style="margin-right:0">
+                                              <a href="#">
+                                                 初来乍到
+                                                 <span class="title-num">100</span>
+                                             </a>
+                                             <a href="#">
+                                                 内网探险
+                                                 <span class="title-num">200</span>
+                                             </a>
+                                             <a href="#">
+                                                 诱捕陷阱
+                                                 <span class="title-num">300</span>
+                                             </a>
+                                             <a href="#">
+                                                海报探秘
+                                                 <span class="title-num">500</span>
+                                             </a>
+                                         </li>
+                                    </ul>
+                                </div>
+                                <div class="b-30"></div>
+                                <div class="title-abstract">
+                                    <p>13岁时他对电脑着了迷，掌握了丰富的计算机知识和高超的操作技能，但却因为用学校的计算机闯入了其他学校的网络而被勒令离校.15岁时，米特尼克成功入侵了“北美空中防务指挥系统”的主机，成为黑客史上的一次经典之作。        不久，他又成功破译美国“太平洋电话公司”在南加利福尼亚洲通讯网络的“改户密码”。随后，他又进入了美国联邦调查局(FBI)的电脑网络，吃惊地发现FBI的特工们正在调查的一名电脑黑客竟然是他自己！他立即施展浑身解数，破译了联邦调查局的“中央电脑系统”密码，每天认真查阅“案情进展情况报告”，并恶作剧地将特工们的资料改成十足的罪犯。不过，特工人员最终还是将米特尼克捕获，法院将他送进了少年犯管教所，米特尼克成为世界上第一个“电脑网络少年犯”。</p>
+                                     <p>13岁时他对电脑着了迷，掌握了丰富的计算机知识和高超的操作技能，但却因为用学校的计算机闯入了其他学校的网络而被勒令离校.15岁时，米特尼克成功入侵了“北美空中防务指挥系统”的主机，成为黑客史上的一次经典之作。        不久，他又成功破译美国“太平洋电话公司”在南加利福尼亚洲通讯网络的“改户密码”。随后，他又进入了美国联邦调查局(FBI)的电脑网络，吃惊地发现FBI的特工们正在调查的一名电脑黑客竟然是他自己！他立即施展浑身解数，破译了联邦调查局的“中央电脑系统”密码，每天认真查阅“案情进展情况报告”，并恶作剧地将特工们的资料改成十足的罪犯。不过，特工人员最终还是将米特尼克捕获，法院将他送进了少年犯管教所，米特尼克成为世界上第一个“电脑网络少年犯”。</p>
+                                </div>
+                           </div>
+                           <!--题目页面结束-->
+                        
+                       </div>
+                   </div>
+                   <!--右侧结束-->
+                   </div>
+               </dv>
+        </section>
+    </body>
+</html>

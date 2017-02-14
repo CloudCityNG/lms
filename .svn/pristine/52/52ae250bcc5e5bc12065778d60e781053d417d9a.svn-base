@@ -1,0 +1,154 @@
+		    	<script type="text/javascript">
+		    	function selectall(obj,a,b){
+		    		$(".sbox").prop('checked', $(obj).is(':checked'));
+		    		$(".sbox").each(function(){
+		    			selectquestions(this,a,b);
+		    		});
+		    	}
+		    	</script>
+		    	<form action="index.php?exam-master-exams-selectquestions" method="post" direct="modal-body">
+					<table class="table">
+						<tr>
+							<td class="form-inline">
+								录入时间：
+								<input type="text" name="search[stime]" size="9" class="input-small datetimepicker" data-date="2016-09-08" data-date-format="yyyy-mm-dd" id="stime" value=""/> - <input class="input-small datetimepicker" data-date="2016-09-08" data-date-format="yyyy-mm-dd" size="9" type="text" name="search[etime]" id="etime" value=""/>
+								关键字：
+								<input name="search[keyword]" class="input-small" size="8" type="text" value=""/>
+							</td>
+						</tr>
+						<tr>
+							<td class="form-inline">
+								<select name="search[questionisrows]" class="input-medium">
+						  		<option value="0">普通试题</option>
+								<option value="1">题帽题</option>
+						  		</select>
+								<input type="hidden" name="search[questiontype]" value="2">
+								<input type="hidden" name="search[questionsubjectid]" value="1">
+				        		录入人：<input name="search[username]" class="input-mini" size="5" type="text" value=""/>
+								<select name="search[questionlevel]" class="combox input-medium">
+							  		<option value="0">难度不限</option>
+									<option value="1">易</option>
+									<option value="2">中</option>
+									<option value="3">难</option>
+						  		</select>
+							</td>
+				        </tr>
+				        <tr>
+							<td class="form-inline">
+						  		<select name="search[questionsectionid]" class="combox input-medium" id="sectionselect" target="knowsselect" refUrl="?exam-master-questions-ajax-getknowsbysectionid&sectionid={value}">
+							  		<option value="">选择章节</option>
+							  									  									  		<option value="1">GCD起源</option>
+							  									  		<option value="2">GCD覆灭</option>
+							  									  								  		</select>
+						  		<select name="search[questionknowsid]" id="knowsselect" class="input-medium">
+							  		<option value="">选择知识点</option>
+							  								  		</select>
+								<button class="btn btn-primary" type="submit">检索</button>
+							</td>
+						</tr>
+					</table>
+				</form>
+				<div class="input"></div>
+								<table class="table table-hover">
+					<thead>
+						<tr>
+					        <th width="50"><input type="checkbox" onclick="javascript:selectall(this,'iselectquestions_2','ialreadyselectnumber_2');"/></th>
+					        <th width="100">试题类型</th>
+					        <th>试题内容</th>
+					        <th width="50">难度</th>
+						</tr>
+					</thead>
+					<tbody>
+										        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="8457" onclick="javascript:selectquestions(this,'iselectquestions_2','ialreadyselectnumber_2')"/></td>
+				          <td>多选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="asdsadsadsadasd">asdsadsadsadasd</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="405" onclick="javascript:selectquestions(this,'iselectquestions_2','ialreadyselectnumber_2')"/></td>
+				          <td>多选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="下列那种行为一定违反了《廉政准则》中关于禁止违反规定选拔任用干部的规定？（）">下列那种行为一定违反了《廉政准则》中关于禁止违反规定选拔任用...</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="404" onclick="javascript:selectquestions(this,'iselectquestions_2','ialreadyselectnumber_2')"/></td>
+				          <td>多选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="《廉政准则》适用于（）。（）">《廉政准则》适用于（）。（）</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="403" onclick="javascript:selectquestions(this,'iselectquestions_2','ialreadyselectnumber_2')"/></td>
+				          <td>多选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="《廉政准则》规定，党员领导干部不准干预和插手农村集体资金、资产和资源的（）等事项。（） -----
+
+&nbsp;">《廉政准则》规定，党员领导干部不准干预和插手农村集体资金、资...</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="402" onclick="javascript:selectquestions(this,'iselectquestions_2','ialreadyselectnumber_2')"/></td>
+				          <td>多选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="《廉政准则》规定，党员领导干部不准违反规定（）小汽车。（）">《廉政准则》规定，党员领导干部不准违反规定（）小汽车。（）</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="401" onclick="javascript:selectquestions(this,'iselectquestions_2','ialreadyselectnumber_2')"/></td>
+				          <td>多选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="反腐倡廉建设必须坚持（）的方针。（）">反腐倡廉建设必须坚持（）的方针。（）</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="400" onclick="javascript:selectquestions(this,'iselectquestions_2','ialreadyselectnumber_2')"/></td>
+				          <td>多选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="特定关系人是指国家工作人员的（）。">特定关系人是指国家工作人员的（）。</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="399" onclick="javascript:selectquestions(this,'iselectquestions_2','ialreadyselectnumber_2')"/></td>
+				          <td>多选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="《廉政准则》规定，党员领导干部不准在（）中搞拉票等非组织活动。（）">《廉政准则》规定，党员领导干部不准在（）中搞拉票等非组织活动...</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="398" onclick="javascript:selectquestions(this,'iselectquestions_2','ialreadyselectnumber_2')"/></td>
+				          <td>多选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="《廉政准则》第二章强调了贯彻实施的（）。">《廉政准则》第二章强调了贯彻实施的（）。</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        				        <tr>
+				          <td><input rel="1" class="sbox" type="checkbox" name="ids[]" value="397" onclick="javascript:selectquestions(this,'iselectquestions_2','ialreadyselectnumber_2')"/></td>
+				          <td>多选题</td>
+				          <td>
+						  	  <a href="javascript:;" title="《廉政准则》总则中强调了（）。">《廉政准则》总则中强调了（）。</a>
+						  </td>
+						  <td>易</td>
+				        </tr>
+				        					</tbody>
+				</table>
+				<div class="pagination pagination-right">
+	            	<ul><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=2&questionids=,405,8457,&rowsquestionids=&0.014372622657179812&page=1">|&lsaquo;</a></li><li><a href="#" class="current">1</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=2&questionids=,405,8457,&rowsquestionids=&0.014372622657179812&page=2">2</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=2&questionids=,405,8457,&rowsquestionids=&0.014372622657179812&page=3">3</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=2&questionids=,405,8457,&rowsquestionids=&0.014372622657179812&page=4">4</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=2&questionids=,405,8457,&rowsquestionids=&0.014372622657179812&page=5">5</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=2&questionids=,405,8457,&rowsquestionids=&0.014372622657179812&page=6">6</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=2&questionids=,405,8457,&rowsquestionids=&0.014372622657179812&page=7">7</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=2&questionids=,405,8457,&rowsquestionids=&0.014372622657179812&page=8">8</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=2&questionids=,405,8457,&rowsquestionids=&0.014372622657179812&page=9">9</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=2&questionids=,405,8457,&rowsquestionids=&0.014372622657179812&page=10">10</a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=2&questionids=,405,8457,&rowsquestionids=&0.014372622657179812&page=11"> >> </a></li><li><a target="modal-body" class="ajax" href="index.php?exam-master-exams-selectquestions&search[questionsubjectid]=1&search[questiontype]=2&questionids=,405,8457,&rowsquestionids=&0.014372622657179812&page=18">&rsaquo;|</a></li><li><a>共177条数据</a></li></ul>
+		        </div>
+		    	<script type="text/javascript">
+		    		jQuery(function($) {
+						markSelectedQuestions('ids[]','iselectquestions_2');
+		    		});
+		    	</script>
+				

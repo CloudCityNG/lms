@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DEMO</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/esl.js"></script>
+    <!--<script src="./socket.io/socket.io.js"></script>-->
+    <script src="javascripts/main.js"></script>
+</head>
+<body>
+    <div id="Main" style="width:1400px;height:700px;"></div>
+    <div id="console" class="box gray-bg">
+        <a href="#" class="toggle" data-target="#console-table-container">
+            <div class="table-header">
+                <h1 class="table-header">
+                    <span class="icon-open"><img width="13" src="images/open.png"></span>
+                    实时攻击
+                </h1>
+            </div>
+        </a>
+        <div id="console-table-container" class="table-container">
+            <table id="events-data">
+                <thead>
+                    <tr class="first-level">
+                        <th></th>
+                        <th colspan="2" class="attacker">Attacker</th>
+                        <th class="target">Target</th>
+                        <th colspan="2" style="color:#fff">Type</th>
+                    </tr>
+
+                    <tr class="second-level">
+                        <th width="100">时间</th>
+                        <th width="100">攻击来源</th>
+                        <th width="100">IP</th>
+                        <th width="100">攻击目标</th>
+                        <th width="100">服务</th>
+                        <th width="100">端口</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="data box top-left gray-bg">
+        <a href="#" class="toggle" data-target="#left-table-container">
+            <div class="table-header">
+                <h1>
+                    <span class="icon-open"><img width="13" src="images/open.png"></span>
+                    攻击来源
+                </h1>
+            </div>
+        </a>
+        <div id="left-table-container" class="table-container">
+            <table id="left-data">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th width="20">
+                            <span class="icon-number">#</span>
+                        </th>
+                        <th>name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="data box top-right gray-bg">
+        <a href="#" class="toggle" data-target="#right-table-container">
+            <div class="table-header">
+                <h1>
+                    <span class="icon-open"><img width="13" src="images/open.png"></span>
+                    攻击目标
+                </h1>
+            </div>
+        </a>
+        <div id="right-table-container" class="table-container">
+            <table id="right-data">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th width="20">
+                            <span class="icon-number">#</span>
+                        </th>
+                        <th>NAME</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="data bottom-right box gray-bg">
+        <a href="#" class="toggle" data-target="#bottom-right-table-container">
+            <div class="table-header">
+                <h1 class="table-header">
+                    <span class="icon-open"><img width="13" src="images/open.png"></span>
+                    攻击类型
+                </h1>
+            </div>
+        </a>
+        <div id="bottom-right-table-container" class="table-container">
+            <table id="bottom-right-data">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th width="20">
+                            <span class="icon-number">#</span>
+                        </th>
+                        <th width="25">
+                            <span class="icon-threattype">●</span>
+                        </th>
+                        <th width="70">Service</th>
+                        <th>Port</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+
+    init({
+        url : 'ws://192.168.2.119:8000',
+        type : [{
+            color : '#ff7d17', //攻击的颜色
+            type : '攻击类型一', //攻击类型的名称
+            port : '8080' //攻击的端口
+        },{
+            color : '#abc7e7',
+            type : '攻击类型二',
+            port : '23'
+        },{
+            color : '#ffba7a',
+            type : '攻击类型三',
+            port : '1433'
+        },{
+            color : '#ff9796',
+            type : '攻击类型四',
+            port : '80'
+        },{
+            color : '#1aa034',
+            type : '攻击类型五',
+            port : '3377'
+        },{
+            color : '#0078b2',
+            type : '攻击类型六',
+            port : '22'
+        }],
+        animateTime : {
+            source : 1000, //攻击源的圆圈动画时间
+            fire : 1000, //攻击中线的动画时间
+            target : 1000 //攻击目标的圆圈时间
+        },
+        mouseoverLineColor : {
+            source : '#abc7e7', //攻击源查看攻击目标线的颜色
+            target : '#000' //攻击目标查看攻击源线的颜色
+        }
+    })
+</script>
+

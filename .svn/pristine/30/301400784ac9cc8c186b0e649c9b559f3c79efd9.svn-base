@@ -1,0 +1,144 @@
+Array
+(
+    [ehtype] => 0
+    [ehtimelist] => 
+    [ehexam] => yyyy
+    [ehexamid] => c4ca4238a0b923820dcc509a6f75849b
+    [ehbasicid] => 2
+    [ehquestion] => Array
+        (
+            [questionids] => Array
+                (
+                    [question] => Array
+                        (
+                            [1] => Array
+                                (
+                                    [0] => 79
+                                )
+
+                            [3] => Array
+                                (
+                                    [0] => 545
+                                )
+
+                        )
+
+                    [questionrow] => 
+                )
+
+            [questions] => Array
+                (
+                    [1] => Array
+                        (
+                            [79] => Array
+                                (
+                                    [questionid] => 79
+                                    [questiontype] => 1
+                                    [question] => 2005年3月14日，（）届全国人大三次会议通过《反分裂国家法》。
+                                    [questionuserid] => 0
+                                    [questionusername] => 
+                                    [questionlastmodifyuser] => 
+                                    [questionselect] => &lt;p&gt;A、八&lt;/p&gt;&lt;p&gt;B、九&lt;/p&gt;&lt;p&gt;C、十&lt;/p&gt;&lt;p&gt;D、十一&lt;/p&gt;
+                                    [questionselectnumber] => 4
+                                    [questionanswer] => C
+                                    [questiondescribe] => 
+                                    [questionknowsid] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [knowsid] => 1
+                                                    [knows] => 党史
+                                                )
+
+                                        )
+
+                                    [questioncreatetime] => 1372247397
+                                    [questionstatus] => 1
+                                    [questionhtml] => 
+                                    [questionparent] => 0
+                                    [questionsequence] => 0
+                                    [questionlevel] => 1
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [545] => Array
+                                (
+                                    [questionid] => 545
+                                    [questiontype] => 3
+                                    [question] => “三个代表”与马列主义、毛泽东思想、邓小平理论在基本立场、基本观点和基本方法上是一致的。
+                                    [questionuserid] => 0
+                                    [questionusername] => 
+                                    [questionlastmodifyuser] => 
+                                    [questionselect] => &lt;p&gt;A、对B、错&lt;/p&gt;
+                                    [questionselectnumber] => 2
+                                    [questionanswer] => A
+                                    [questiondescribe] => 
+                                    [questionknowsid] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [knowsid] => 1
+                                                    [knows] => 党史
+                                                )
+
+                                        )
+
+                                    [questioncreatetime] => 1372247469
+                                    [questionstatus] => 1
+                                    [questionhtml] => 
+                                    [questionparent] => 0
+                                    [questionsequence] => 0
+                                    [questionlevel] => 1
+                                )
+
+                        )
+
+                )
+
+            [questionrows] => Array
+                (
+                )
+
+        )
+
+    [ehsetting] => Array
+        (
+            [sectionid] => 1
+            [knowsid] => 1
+            [title] => yyyy
+            [time] => 60
+            [number] => Array
+                (
+                    [1] => 1
+                    [3] => 1
+                    [6] => 
+                    [5] => 
+                    [4] => 
+                    [2] => 
+                )
+
+        )
+
+    [ehuseranswer] => Array
+        (
+            [79] => D
+            [545] => A
+        )
+
+    [ehstarttime] => 1471853066
+    [ehtime] => 56
+    [ehscore] => 50.0
+    [ehscorelist] => Array
+        (
+            [79] => 0
+            [545] => 1
+        )
+
+    [ehuserid] => 14
+    [ehusername] => weihw
+    [ehdecide] => 0
+    [ehstatus] => 1
+)

@@ -1,0 +1,255 @@
+
+.g-container .col-md-9 img, .g-container .col-md-3 img {
+border: 0;
+-ms-interpolation-mode: bicubic;
+vertical-align: middle;
+}
+
+.g-container .col-md-9, .g-container .col-md-3{
+   float:left;
+   padding: 0 10px;
+   box-shadow: #ccc 0px 1px 3px 0px;
+    position: relative;
+    min-height: 1px;
+}
+
+.g-container  .col-md-9{
+   width:75%;
+   background:#fff;
+   
+}
+.col-md-9:after{
+    display:block;
+    clear:both;
+    content:"";
+}
+.col-md-9 .course-content{
+    background: #fff;
+}
+.col-md-9 .course-content h3 {
+color: #b4b4b4;
+cursor: pointer;
+line-height: 27px;
+font-size: 18px;
+padding-top:10px;
+}
+.col-md-9 .course-content h3 #hot_course .top10-mark{
+    width:22px;
+    height:16px;
+    position:absolute;
+    top:3px;
+    left:187px;
+   background:url("../images/newcourse.png") no-repeat;
+    
+}
+.col-md-9 .course-content h3 #hot_course .top10-mark .font{
+    display:inline-block;
+    width:20px;
+    height:10px;
+    font-size:x-small;
+    clear:both;
+    color:#fff;
+     margin-top:-8px;
+     margin-left:6px;
+}
+.col-md-9 .tab-hd .current {
+color: #333333;
+border-bottom: 3px solid #1abc9c;
+}
+.col-md-9 .tab-hd  .top10-mark{
+    border:0;
+}
+.col-md-9 .mb20 {
+margin-bottom: 20px;
+}
+
+.mb20 {
+margin-bottom: 20px;
+}
+.ft14 {
+font-size: 20px;
+font-weight: 100;
+}
+.ft_yahei {
+font-family: "Microsoft Yahei ", "微软雅黑";
+}
+.popular_courses:after{
+    display:block;
+    clear:both;
+    content:"";
+}
+.subject-wrap {
+width: 210px;
+/*float: left;*/
+/*margin-left: 30px;*/
+text-align: center;
+/*line-height: 30px;*/
+padding-bottom: 10px;
+margin-bottom: 20px;
+}
+.subject-wrap {
+float: left;
+border: 0px;
+line-height:10px;
+margin-right: 20px;
+margin-left: 1px;
+margin-top: 20px;
+}
+
+.wrap-left{
+    margin-left:0px;
+}
+.wrap-right{
+    margin-right:0px;
+}
+a.subj-img-link {
+width: 210px;
+height:118px;
+display: block;
+position: relative;
+}
+
+.col-md-9 a {
+display: block;
+cursor: pointer;
+text-decoration: none;
+outline: none;
+}
+.col-md-9 a:hover{
+    color:#13a654;
+}
+.col-md-9 .newSubname {
+text-align: left;
+font-size: 16px;
+font-weight: 600;
+margin-top: 20px;
+font-family: "微软雅黑";
+color: #5a5a5a;
+padding-bottom: 5px;
+width:205px;
+line-height:20px;
+
+/*border:1px solid red;*/
+}
+.col-md-9 .newSubname a {
+color: #5a5a5a;
+word-break:keep-all;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+}
+.col-md-9 .newSubname a:hover {
+    color:#13a654;
+}
+.subject-wrap .fl {
+float: left;
+display:inline;
+}
+.people {
+margin-left: 0px;
+}
+.people {
+background:url("../images/people.png") no-repeat;
+background-position: left center;
+text-align: left;
+text-indent: 15px;
+margin-left: 0px;
+padding-top: 3px;
+margin-top:1px;
+}
+.job-name{
+    margin-top:5px;
+}
+.job-name a.active, .job-name a:hover {
+/*background: #1abc9c;
+color: #fff;
+border-radius: 30px;*/
+color:#fff;
+}
+.job-name a {
+display: inline-block;
+margin: 8px 15px 0 0;
+padding: 10px 30px;
+font-size: 17px;
+/*color: #54595b;*/
+text-decoration: none;
+background: #1abc9c;
+color: #fff;
+border-radius: 30px;
+}
+.jobtree-title {
+margin-top: 5px;
+border-bottom: 1px dashed #C9C9C9;
+}
+/*左侧样式表*/
+.g-container .col-md-3{
+    width:22%;
+    padding-right:0;
+/*    padding-left:0;*/
+}
+.col-md-3:after{
+    display:block;
+    clear:both;
+    content:"";
+}
+.col-md-3 .users-top10{
+    box-shadow: #ccc 0px 1px 1px 0px;
+    padding: 15px 15px 35px;
+    /*margin-top: 15px;*/
+    background: #fff;
+}
+.users-top10 .users-top10-header {
+padding: 0 10px;
+font-size: 18px;
+color: #525252;
+border-left: 5px solid #1abc9c;
+}
+.users-top10 .users-top10-content {
+margin-top: 8px;
+color: #46b558;
+font-size: 14px;
+}
+
+.users-top10  .users-top10-content .rank-row > div{
+    margin:10px 0;
+    width:50%;
+}
+.rank-row:after{
+    display:block;
+    clear:both;
+    content:"";
+}
+.rank-row .col-md-5,.rank-row .col-md-7{
+    float:left;
+}
+.rank-row .col-md-5{
+    height:36px;
+    overflow:hidden;
+}
+.rank-row .col-md-5 .userimg {
+display: inline-block;
+height: 36px;
+border-radius: 50%;
+}
+.rank-row .col-md-5 .user-level{
+    color:#999;
+}
+.pull-right {
+    display:inline-block;
+float: right!important;
+line-height:36px;
+max-width:120px;
+word-break: keep-all;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+.rank-row strong{
+    font-weight:bold;
+}
+.j-list .module_content .case-list .case-title a:hover{
+    color:#fff;
+}
+.j-list .module_content .case-list .case-describe a:hover{
+    color:#000000;
+}

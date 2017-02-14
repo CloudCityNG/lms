@@ -1,0 +1,1 @@
+<ul class="nav nav-tabs nav-stacked">	<li<?php if($this->tpl_var['method'] == 'index'){ ?> class="active"<?php } ?>>		<a href="index.php?user-master">首页</a>	</li>	<li<?php if($this->tpl_var['method'] == 'user'){ ?> class="active"<?php } ?>>		<a href="index.php?user-master-user">用户管理</a>	</li>	</ul>

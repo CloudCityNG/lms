@@ -1,0 +1,1 @@
+<ul class="nav nav-tabs nav-stacked">	<li{x2;if:$method == 'index'} class="active"{x2;endif}>		<a href="index.php?user-master">首页</a>	</li>	<li{x2;if:$method == 'user'} class="active"{x2;endif}>		<a href="index.php?user-master-user">用户管理</a>	</li>	</ul>

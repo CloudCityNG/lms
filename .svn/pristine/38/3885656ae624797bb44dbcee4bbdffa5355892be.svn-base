@@ -1,0 +1,387 @@
+/* 
+    Document   : safe-cons
+    Created on : 2015-2-5, 10:30:16
+    Author     : develop
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body{
+/*    min-width:1000px;*/
+}
+ul,li{
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+.container .container-safe{
+     height:400px;
+     position:relative;
+     /*-width:expression(document.documentElement.clientWidth<960?960:document.documentElement.clientWidth);*/
+     overflow:hidden;
+}
+.c-safe{
+    height:400px;
+}
+.c-safe .c-img{
+float: left;
+width: 1680px;
+height: 400px;
+overflow: hidden;
+}
+.c-safe .c-img a{
+   display: block;
+   width: 1680px;
+    height:400px;
+}
+
+.c-safe .c-img .box-img1{
+    background:url("../../img/safety-1.png") no-repeat;
+}
+.c-safe .c-img .box-img2{
+    background:url("../../img/safety-2.png") no-repeat;
+}
+.c-safe .c-img .box-img3{
+    background:url("../../img/safety-3.png") no-repeat;
+}
+.flex-control-nav{
+    width:400px;
+    position: absolute;
+    bottom: 70px;
+    left:45%;
+    text-align: center;
+}
+.flex-control-nav li {
+margin: 0 6px;
+display: inline-block;
+float:left;
+zoom: 1;
+}
+
+.flex-control-nav li a {
+width: 11px;
+height: 11px;
+display: block;
+background:#666;
+cursor: pointer;
+text-indent: -9999px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+-o-border-radius: 20px;
+border-radius: 20px;
+box-shadow: inset 0 0 3px rgba(0,0,0,0.3);
+}
+.flex-control-nav li.on a {
+background: #000;
+background: rgba(0,0,0,0.9);
+cursor: default;
+}
+.ourwork {
+ width:100%;
+ background: #f5f5f5;
+}
+.ourwork .our-in{
+    width:970px;
+    margin:0 auto;
+}
+.ourwork header{
+    padding-bottom:30px;
+}
+.ourwork h1.our-title {
+margin-top: 0;
+color: rgb(39, 157, 217);
+font-weight: 500;
+padding-top: 20px;
+font-size:42px;
+text-align: center;
+font-family: "Microsoft Yahei";
+}
+
+.ourwork .container{
+  width:100%;
+}
+.ourwork .container p {
+font-family: "Microsoft Yahei";
+font-size: 16px;
+line-height: 30px;
+font-weight: 500;
+color: #444;
+margin-bottom: 60px;
+margin: 0 0 10px;
+text-indent:2em;
+}
+
+.ourwork .sjt {
+width: 100%;
+height: 50px;
+background: url("../../img/index-mask2.png") no-repeat center;
+}
+#dTech {
+position: relative;
+width: auto;
+min-height: 300px;
+background-color: rgb(52,53,53);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.dTech header {
+padding-top: 10px;
+}
+.dTech header h1 {
+color: #fff;
+}
+header h1, header p {
+   font-weight:normal;
+font-family: "Microsoft Yahei";
+}
+header h1 {
+font-size: 42px;
+margin-bottom: 20px;
+font-family: "Microsoft Yahei";
+}
+.dTech header h1 span {
+color: rgb(39, 157, 217);
+}
+.a-container{
+    width: 1170px;
+}
+.row {
+margin-right: -15px;
+margin-left: -15px;
+}
+.dTech-list {
+margin-top: 70px;
+}
+.dTech-list li {
+list-style: none;
+height: 100px;
+margin-bottom: 45px;
+}
+
+
+
+
+/*视频列表*/
+
+#c-container{
+    width:100%;
+   padding:10px 0;
+}
+
+#c-container:after{
+    display:block;
+    clear:both;
+    content:"";
+}
+.container-video{
+    margin:0 auto;
+}
+.video-list{
+   width:100%;
+}
+
+.video-list:after{
+    display:block;
+    clear:both;
+    content:"";
+}
+.v-outer{
+    width:100%;
+    height:20px;
+}
+.v-more{
+    display:block;
+    float:right;
+    margin-right:23px;
+    font-weight:bold;
+    color:rgb(39,157,217);
+}
+.wrap-left {
+margin-left: 0px;
+}
+.subject-wrap {
+float: left;
+border: 0px;
+line-height: 10px;
+margin-right:3%;
+margin-top:5px;
+}
+.subject-wrap {
+text-align: center;
+padding-bottom: 10px;
+margin-bottom: 20px;
+}
+.right-0{
+    margin-right:0;
+}
+.subject-wrap a {
+display: block;
+cursor: pointer;
+text-decoration: none;
+outline: none;
+}
+a.subj-img-link {
+height:185px;
+display: block;
+border:1px solid #ccc;
+box-shadow:0 1px 4px #999;
+}
+.subject-wrap .newSubname{
+    /*display:block;*/
+    line-height:35px;
+    font-size:14px;
+}
+.more-video{
+    clear:both;
+    display:block;
+    float:right;
+    margin-right:15px;
+    font-size:16px;
+    line-height:10px;
+    
+}
+
+#xwdt {
+position: relative;
+padding-bottom: 60px;
+padding-top:20px;
+}
+#xwdt {
+width: auto;
+height: auto;
+background-color: #f5f5f5;
+}
+#xwdt:after{
+    display:block;
+    clear:both;
+    content:"";
+}
+header.special {
+text-align: center;
+margin-bottom: 20px;
+}
+#xwdt h1 {
+font-size: 22px;
+font-weight: 600;
+margin-bottom: 5px;
+margin-top: 0;
+color: rgb(39,157,217);
+}
+#xwdt .main-content-wrap {
+    
+margin-left: auto;
+margin-right: auto;
+margin:0 auto;
+position: relative;
+z-index: 11;
+}
+
+#xwdt h3 {
+font-size:18px;
+font-weight: 600;
+margin-bottom: 5px;
+margin-top: 0;
+text-indent:1em;
+color: rgb(39,157,217);
+}
+#xwdt .main-content {
+float:left;
+}
+#xwdt ul {
+list-style: none;
+}
+article.main-content ul {
+padding-left: 35px;
+}
+#xwdt ul li {
+list-style-image: url(../../img/sanjiao.png);
+width: 100%;
+height: 30px;
+border-bottom: 1px dashed #000;
+position: relative;
+text-align:left;
+}
+article.main-content ul li {
+font-size: 18px;
+color: #454545;
+line-height: 36px;
+}
+#xwdt a {
+font-family: "黑体";
+font-size: 15px;
+color: rgb(92,93,93);
+text-decoration: none;
+}
+.col-md-7 {
+width: 600px;
+float:left;
+padding-left: 15px;
+}
+.col-md-7 p{
+    font-size: 16px;
+    color: #787878;
+    line-height: 32px;
+}
+.hidden-xs{
+    margin-bottom: 20px;
+    margin-left: 70px;
+    width: 33.33333333%;
+    float: left;
+}
+.safe-test{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1100;
+    cursor: pointer; 
+    height: 3124px; 
+   display:none;
+   background-color: rgba(119, 119, 119,0.7);
+}
+.safe-inner{
+    position: absolute;
+    /*top: 2195px;*/ 
+    left: 400px; 
+    padding:10px;
+    z-index: 1101;
+    outline: none;
+    width: 758px;
+    height:538px; 
+    display:none;
+    background: #fff;
+}
+.test-tip{
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+.g-background{
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#EEEEEE));
+    background: -webkit-linear-gradient(top, #FFFFFF 0%,#EEEEEE 100%);
+    background: -o-linear-gradient(top, #FFFFFF 0%,#EEEEEE 100%);
+    background: -ms-linear-gradient(top, #FFFFFF 0%,#EEEEEE 100%);
+    background: linear-gradient(to bottom, #FFFFFF 0%,#EEEEEE 100%);
+}
+.test-tip .con-title{
+      margin:5px 20px 10px 10px;
+}
+.test-tip .con-title:after{
+    display:block;
+    clear:both;
+    content:"";
+}
+
+.con-title .safe-top{
+    text-align:left;
+    line-height:20px;  
+}
+.test-count{
+    width:120px;
+   line-height:20px;
+   border-radius:10px;
+   float:left;
+   margin-top:6px;
+   outline:0;
+}
+.point{
+    float:right;
+}

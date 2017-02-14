@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="综合评测 | 红客学院 ">
+<meta name="description" content="综合评测 | 红客学院 ">
+<meta name="keywords" content="综合评测 | 红客学院 ">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>综合评测 | 红客学院</title>
+<link href="app/core/styles/css/bootstrap.css" rel="stylesheet">
+<link href="app/core/styles/css/layoutit.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="app/core/styles/js/html5.js"></script>
+<script src="app/core/styles/js/html5shiv.js"></script>
+<![endif]-->
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<!--
+<script type="text/javascript" src="app/core/styles/js/evercookie/swfobject-2.2.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/evercookie/evercookie.js"></script>
+<script type="text/javascript" src="index.php?core-api-setsessionid"></script>
+<script type="text/javascript" src="app/core/styles/js/fingerprint/fingerprint.js"></script>
+<script type="text/javascript" src="app/core/styles/js/fingerprint/plugin.js"></script>
+-->
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+<link href="app/user/styles/css/theme.css" rel="stylesheet" type="text/css" />
+</head><body>
+<div class="row-fluid top">    <div class="logo">      <a href="/">          <img style="" src="app/user/styles/img/theme/edu.png" />      </a>    </div>    <ul  class="nav-top">        <li><a href="/course/explore">课程 </a></li>        <li><a href="/ems">综合评测 </a></li>        <li><a href="http://www.cnhongke.org">红客训练营 </a></li>        <li><a href="/page/knowledgeSystem">知识体系 </a></li>        <li><a href="/page/service">安全服务 </a></li>        <li><a href="/article">安全资讯  </a></li>        <li><a href="/page/aboutus">关于我们  </a></li>    </ul>    <div>    <ul class="nav-user">        	<li><a href="index.php?user-app-register">注册</a></li>                      <li><a href="index.php?user-app-ssologin">登录</a></li>           </ul>    </div></div><style>    .logo{        position: absolute;top: 0; left: 0;    }    .logo a{        height: 60px;line-height: 50px;padding: 4px 32px;color: #fff;    }    .logo img{    width: auto;padding-top: 6px;    }a{color: #c1c1c1;}a:hover{color:#fff;}.nav-top{padding-left: 200px;padding-top: 16px;} .nav-top li{     float:left;list-style:none; }.nav-top li a {    padding: 20px 30px;    line-height: 20px;    color: #c1c1c1;    background: none;    -webkit-transition: all 0.3s ease;    -moz-transition: all 0.3s ease;    -o-transition: all 0.3s ease;    transition: all 0.3s ease;}.nav-top li a:hover{    color:#fff;}.nav-user li{float:right;list-style: none;padding-right:30px; margin-top: -8px;}nav-user li a{    padding: 20px 15px;    color: #c1c1c1;}</style><div class="row-fluid">
+	<div class="container-fluid logcontent">
+		<div class="logbox exambox">
+			<form class="form-horizontal logform" method="post" action="index.php?user-app-login">
+				<fieldset>
+					<legend>用户登录</legend>
+					<div class="logcontrol">
+						<div class="control-group">
+							<label class="control-label" for="inputEmail">用户名：</label>
+							<div class="controls">
+								<input class="input-xlarge" type="text" name="args[username]" datatype="userName" needle="needle" msg="请你输入用户名" value="guest"/><span>请输入您的用户名</span>
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="inputPassword">密码：</label>
+							<div class="controls">
+								<input class="input-xlarge" type="password" name="args[userpassword]" datatype="password" needle="needle" msg="请你输入密码" value="123456"/><span>密码长度6位以上，数字、字母或其他字符</span>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<input type="hidden" value="1" name="userlogin"/>
+								<button class="btn btn-info logbtn" type="submit">登录</button>
+								<button onclick="javascript:window.location='index.php?user-app-register';" type="button" class="btn logbtn">注册</button>
+							</div>
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<p>请输入正确的用户名和密码登录　如果您还没有帐号，请在此<a href="index.php?user-app-register">注册</a></p>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+		<div class="logbotm"></div>
+	</div>
+</div>
+ <footer class="es-footer">
+  <div class="copyright">
+    <div class="container">
+        Copyright&copy;2012-2016 51elab.com
+      <div class="mts">
+               北京易霖博信息技术有限公司 版权所有 京ICP备14033476号
+       </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+$(".thumbnails img").bind("error",function(){$(this).attr("src","app/core/styles/images/icons/Book.png?"+Math.random());});
+</script>
+<style>
+    .container{
+    width:100%;
+    margin-top:20px;
+    }
+    .es-footer .copyright {
+        width:100%;
+    background: #212121;
+    border-top: 1px solid #444;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 30px;
+    color: #c1c1c1;
+}
+</style></body>
+</html>

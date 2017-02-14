@@ -1,0 +1,1 @@
+<ul class="nav nav-tabs nav-stacked">	<li<?php if($this->tpl_var['method'] == 'index'){ ?> class="active"<?php } ?>>		<a href="index.php?core-master">首页</a>	</li>	<li<?php if($this->tpl_var['method'] == 'apps'){ ?> class="active"<?php } ?>>		<a href="index.php?exam-master-basic">考试管理</a>	</li></ul>

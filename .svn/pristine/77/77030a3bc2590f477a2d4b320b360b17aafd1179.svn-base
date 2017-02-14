@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="综合评测 | 红客学院">
+<meta name="description" content="综合评测 | 红客学院">
+<meta name="keywords" content="综合评测 | 红客学院">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>综合评测 | 红客学院</title>
+<link href="app/core/styles/css/bootstrap.css" rel="stylesheet">
+<link href="app/core/styles/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<link href="app/user/styles/css/theme.css" rel="stylesheet" type="text/css" />
+<link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" href="app/exam/styles/css/mathquill.css" type="text/css">
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/jquery.json.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<!--
+<script type="text/javascript" src="app/core/styles/js/fingerprint/fingerprint.js"></script>
+<script type="text/javascript" src="app/core/styles/js/fingerprint/plugin.js"></script>
+-->
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+<script src="app/exam/styles/js/plugin.js"></script>
+</head><body>
+<div class="row-fluid top">
+    <div class="logo">
+      <a href="/edusoho/web/">
+          <img style="" src="app/user/styles/img/theme/edu.png" />
+      </a>
+    </div>
+    <ul  class="nav-top">
+        <li><a href="/course/explore">课程 </a></li>
+        <li><a href="/ems">综合评测 </a></li>
+        <li><a href="http://www.cnhongke.org">红客训练营 </a></li>
+        <li><a href="/page/knowledgeSystem">知识体系 </a></li>
+        <li><a href="/page/service">安全服务 </a></li>
+        <li><a href="/article">安全资讯  </a></li>
+        <li><a href="/page/aboutus">关于我们  </a></li>
+    </ul>
+    <div>
+    <ul class="nav-user">
+              
+        <li><a href="/my"><em class="icon-user"></em> 我的学习</a></li>
+                      &nbsp;&nbsp;<li><a href="http://sso.51elab.com/sso/logout.51elab?c=http://edu.51elab.com/ems" class="noneajax"><em class="icon-lock"></em> 退出</a></li>
+                        <li>您好（demo）&nbsp;&nbsp;</li>
+	    </ul>
+    </div>
+</div>
+<style>
+    .logo{
+        position: absolute;top: 0; left: 0;
+    }
+    .logo a{
+        height: 60px;line-height: 50px;padding: 4px 32px;color: #fff;
+    }
+    .logo img{
+    height: 50px;width: auto;padding-top: 6px;
+    }
+a{
+color: #c1c1c1;
+}
+a:hover{
+color:#fff;
+}
+.nav-top{
+padding-left: 150px;padding-top: 16px;
+}
+ .nav-top li{
+     float:left;list-style:none;
+ }
+.nav-top li a {
+    padding: 20px 30px;
+    line-height: 20px;
+    color: #c1c1c1;
+    background: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.nav-top li a:hover{
+    color:#fff;
+}
+.nav-user li{
+float:right;list-style: none;padding-right:30px; margin-top: -8px;
+}
+nav-user li a{
+    padding: 20px 15px;
+    color: #c1c1c1;
+}
+</style><div class="row-fluid">
+	<div class="container-fluid examcontent">
+		<div class="exambox" id="datacontent">
+			<div class="examform">
+				<ul class="breadcrumb">
+					<li>
+						<span class="icon-home"></span> <a href="index.php?exam">考场选择</a> <span class="divider">/</span>
+					</li>
+					<li>
+						<a href="index.php?exam-app-basics">wifi的网络基础课程</a> <span class="divider">/</span>
+					</li>
+					<li class="active">
+						成绩单
+					</li>
+				</ul>
+				<ul class="nav nav-tabs">
+					<li class="active">
+						<a href="#">成绩单</a>
+					</li>
+				</ul>
+				<p>您的最高分：<span class="text-warning">0</span> 您的最好名次：<span class="text-warning">2</span></p>
+				<table class="table table-bordered table-hover">
+					<tr class="info">
+						<td>名次</td>
+						<td>用户名</td>
+                        <td>得分</td>
+						<td>考试时间</td>
+						<td>用时</td>
+					</tr>
+										<tr>
+						<td>1</td>
+						<td>weihw</td>
+						<td>3.00</td>
+						<td>2016-08-18 11:25:24</td>
+						<td>1分钟</td>
+					</tr>
+									<tr>
+						<td>2</td>
+						<td>demo</td>
+						<td>0.00</td>
+						<td>2016-08-19 16:39:41</td>
+						<td>7秒</td>
+					</tr>
+									<tr>
+						<td>3</td>
+						<td>test1</td>
+						<td>0.00</td>
+						<td>2016-08-19 16:00:51</td>
+						<td>6秒</td>
+					</tr>
+									<tr>
+						<td>4</td>
+						<td>test1</td>
+						<td>0.00</td>
+						<td>2016-08-19 15:56:18</td>
+						<td>7秒</td>
+					</tr>
+								</table>
+				<div class="pagination pagination-right">
+					<ul></ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ <footer class="es-footer">
+  <div class="copyright">
+    <div class="container">
+        Copyright&copy;2012-2016 51elab.com
+      <div class="mts">
+               北京易霖博信息技术有限公司 版权所有 京ICP备14033476号
+       </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+$(".thumbnails img").bind("error",function(){$(this).attr("src","app/core/styles/images/icons/Book.png?"+Math.random());});
+</script>
+<style>
+    .container{
+    width:100%;
+    }
+    .es-footer .copyright {
+        width:100%;
+    background: #212121;
+    border-top: 1px solid #444;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 30px;
+    color: #c1c1c1;
+}
+</style></body>
+</html>

@@ -1,0 +1,13 @@
+
+@media screen and (min-width:1435px){	
+    #M-moclist .g-flow{
+    width:86%;
+}
+}
+
+@media screen and (max-width: 1434px) {	
+   #M-moclist .g-flow{
+    width:99.9%;
+} 
+}
+

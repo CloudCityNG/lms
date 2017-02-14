@@ -1,0 +1,132 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CTF首页</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         <link rel="stylesheet" type="text/css" href="css/base.css">
+         <link rel="stylesheet" type="text/css" href="css/media-style.css">
+        <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>   
+    </head>
+<script type="text/javascript">
+    $(function(){
+        Tab();
+    })
+    function Tab(){ 
+         var tr=$("#tab").find("tr");
+         var tr_l=tr.length;
+         var lastTD=$("#tab").find(".t-circle");
+         var Span=$("#tab").find(".t-circle").find("span");
+        var every=(Span.length)/(tr_l-1);
+         var count=every*25;
+         var Allw=count+310;
+        $("#tab").width(Allw);
+   }
+</script>
+</script>
+    <body>
+        <section id="M-moclist">
+               <div class="g-flow">
+                   <div class="g-container f-cb f-pr">
+                   <!--侧边栏-->
+                   <div class="g-sd1 f-pr">
+                       <div class="b-200"></div>
+                       <ul class="nav" id="Nav">
+                           <li class="navition"><a href="index.html">题目</a></li>
+                           <li class="navition selected"><a class="selected" href="score-table.html">积分榜</a></li>
+                           <li class="navition"><a href="#">公告</a></li>
+                           <li class="navition"><a href="#">决赛日程</a></li>
+                           <li class="navition"><a href="#">大赛简介</a></li>
+                           <li class="navition"><a href="#">大赛新闻</a></li>
+                           <li class="navition"><a href="#">组织单位</a></li>
+                           <li class="navition"><a href="#">大赛规则</a></li>
+                           <li class="navition"><a href="#">决赛场地</a></li>
+                           <li class="navition"><a href="#">FAQ</a></li>
+                       </ul>
+                   </div>
+                   <!--左侧结束-->
+                   <!--右侧-->
+                   <div class="g-mn1">
+                       <div class="g-mn1c">
+                           <!--题目-->
+                           <div class="j-list lists">
+                                <h3 class="b-title">积分榜
+                                   <span class="b-tips">(每5分钟更新)</span>
+                                </h3>
+                                <div class="b-15"></div>
+                                <div class="b-course b-width">
+                                 <table cellspacing="0"  cellpadding="0" border="0" id="tab" class="tbl_score" style="min-width:980px;">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:60px;">#</th>
+                                                <th style="width:150px;">名称</th>
+                                                <th style="width:100px;">得分</th>
+                                                <th>解题情况</th>
+                                            </tr>
+                                            <tr>
+                                                <td>1</td>
+                                                <td class="t-score">0ops</td>
+                                                <td class="t-score">5220</td>
+                                                <td  class="t-circle">
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-gray"></span>
+                                                    <span class="t-green"></span>
+                                                    <span class="t-green"></span>
+                                                 
+                                            
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>  
+                           </div>
+                           <!--题目页面结束-->
+                        
+                       </div>
+                   </div>
+                   <!--右侧结束-->
+                   </div>
+               </dv>
+        </section>
+    </body>
+</html>

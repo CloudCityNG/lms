@@ -1,0 +1,423 @@
+/* 
+    Document   : fight-wall
+    Created on : 2014-7-28, 14:10:51
+    Author     : develop
+    Description:
+        Purpose of the stylesheet follows.
+*/
+img{
+    border:0;
+    padding:0;
+    margin:0;
+    
+}
+#common-section{
+     width:100%;
+     min-height:100%;
+}
+.against-section{
+      background:url("../images/fight-bg.png") no-repeat 50% 50%;
+       background-size:cover;
+}
+.contest-section{
+       background:url("../images/contest-bg.png") no-repeat 50% 50%;
+    background-size:cover;
+}
+
+.ranking-section{
+     background:url("../images/ranking-bg.png") no-repeat 50% 50%;  
+     background-size:cover;
+}
+ 
+.contest-rule{
+   clear:both;
+    width:80%;
+   margin:0 auto;
+    padding-top:10px;
+    height:100%;
+
+}
+.contest-rule:after{
+     display:block;
+    clear:both;
+    content:"";
+}
+.contest-rule .contest-title{
+     padding:10px 0;
+    font-size:30px;
+    text-align:center;
+    color:#fff;
+    position:relative;
+    font-size:14px;
+}
+.contest-content{
+    width:80%;
+    min-height:500px;
+    background:#0a0e17;
+    border:1px solid #6B6C78;
+     border-radius:6px;
+    height:100%;
+    opacity:0.8;
+    margin:30px auto;
+     color:#fff;
+     padding:20px 100px;
+    
+}
+
+ .contest-content ul{
+    margin:50px 110px;
+    color:#fff;
+}
+ .contest-content ul li{
+     list-style:none;
+    line-height:27px;
+    margin-top:15px;
+    background:url("../images/contest-li.png") 0px 9px no-repeat;
+    text-indent:2em;
+}
+
+ .against-wall{
+     clear:both;
+    width:80%;
+   margin:0 auto;
+    /*padding-top:100px;*/
+    height:100%;
+   
+}
+.score-rank{
+    width:1290px;
+}
+ .against-wall:after{
+     display:block;
+    clear:both;
+    content:"";
+}
+ .against-wall .against-title{
+   padding:20px 0;
+    font-size:30px;
+    text-align:center;
+    color:#fff;
+    position:relative;
+    font-size:14px;
+    margin:0;
+}
+img{
+    border:0;
+}
+.against-wall .against-title ul{
+    list-style:none;
+   padding:2px 3px;
+    position:absolute;
+    top:20px;
+    right:10px;
+
+}
+.against-wall .against-title ul li{
+    float:left;
+     margin-right:10px;
+}
+.against-wall .against-title ul li img{
+    float:left;
+    margin-right:5px;
+}
+.against-wall .against-title ul li span{
+    display:block;
+    float:left;
+    height:30px;
+    line-height:30px;
+    margin-top:3px;
+}
+.wall-but{
+    width:100%;
+/*    border:1px solid red;*/
+}
+.wall-but:after{
+    display:block;
+    clear:both;
+    content:"";
+}
+
+.wall-but input{
+    float:right;
+    padding:0 10px;
+    height:30px;
+    margin-left:10px;
+    border-radius:5px;
+    background:#fff;
+    box-shadow:none;
+    border: 1px solid #007664;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+    outline:none;
+    background: url(../images/list_button.png) left top repeat-x;
+    cursor:pointer;
+}
+.wall-but select{
+    background:#007664;
+    height:30px;
+    color:#9fa4a3;
+    min-width:170px;
+    border-radius:5px;
+    border:0;
+    background:rgba(0,118,100,0.7);
+    outline:0;
+}
+.wall-but select option{
+    color:#fff;
+}
+.wall-but .wall-back{
+/*    float:left;*/
+    margin-left:0px;
+   
+}
+ .against-content{
+    width:100%;
+    background:#0a0e17;
+    border:1px solid #6B6C78;
+    border-radius:6px;
+    height:100%;
+    opacity:0.8;
+    margin:5px auto;   
+    overflow:hidden;
+}
+.against-content:after{
+    display:table;
+    clear:both;
+    content:"";
+}
+.against-table{
+    width:20%;
+    float:left; 
+}
+.against-table-2{
+    width:970px;
+    float:right; 
+    overflow-x:scroll;
+    overflow-y: hidden;
+    border-left:1px solid #394A4A;
+    
+ 
+    
+}
+#style-1::-webkit-scrollbar{
+    height:15px;
+   background-color:#0a0e17;
+}
+#style-1::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+    background-color:#25252A;
+}
+#style-1::-webkit-scrollbar-track{
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+     border-radius:10px;
+      background-color:#0a0e17;
+}
+ .tbl_course{
+    clear:both;
+    color:#fff;
+    text-align:center;
+}
+ tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+display: table-row;
+vertical-align: inherit;
+
+}
+.table-title td{
+    font-weight:bold;
+}
+.table-title td.agatd img{
+    margin-top:3px;
+}
+.tbl_course tr td{
+    font-size:22px;
+}
+.tbl_course tr .score{
+    color:#EEF33E;
+    font-weight:bold;
+/*    font-size:33px;*/
+}
+.tbl_course td{
+     height:70px;
+}
+.tab-striped td{
+    height:72px;
+}
+.against-table-2 .tab-striped tr td{
+    min-width:120px;
+    height:72px;
+   
+}
+
+/*.u-table-border{
+   border-bottom: 1px solid #DDDDDD;
+   font-size: 20px;
+}*/
+
+.u-course-time{
+    width: 100%;
+/*  height: 100%;*/
+   margin: 0;
+}
+/*.u-course-time .fight-img{
+    vertical-align:center;
+    position:relative;
+    text-indent:0.1em;
+}*/
+/*.people{
+    position:absolute;
+    top:15px;
+    left:25px;
+}*/
+
+/*.fight-img span{
+    width:130px;
+    text-align:left;
+    overflow:hidden;
+}*/
+/*.u-course-time .fight-img span{
+  display:inline-block;
+  margin-top:10px;
+}*/
+/*.guanka-logo .guanka-img{
+     position:absolute;
+    top:23px;
+    left:100px;
+}
+.u-border{
+    border-right:1px solid #3E4A48;
+}*/
+/*.fight-none{
+ text-align:center;
+ width:1px;
+ height:40px;
+ border:1px solid #434F4D;
+ 
+}*/
+#grade_list{
+    width:70%;
+    background:#111d22;
+    color:#00050C;
+    border:1px solid #6B6C78;
+     border-radius:6px;
+    padding:20px auto;
+     margin:0 auto;
+}
+.rank-list {
+    width:90%;
+    color:#fff;
+    margin:10px auto 30px auto;
+}
+
+.rank-list ul {
+    width:100%;    
+    padding:0;
+    margin:0;
+    opacity:0.8;
+   
+}
+.rank-list ul.ranking-four{
+    border-bottom:1px solid #4B85B0;
+}
+.rank-list ul.ranking-five{
+     border-bottom:1px solid #E4E4E4;
+}
+.rank-first{
+       color:#fff;
+       font-weight:bold;
+}
+.rank-width{
+    width:100%;
+     border-bottom:1px solid #48515A;
+}
+.rank-width ul{
+    border:0;
+}
+ .rank-sec{
+/*    background:#00B0F0;*/
+}
+.rank-sec:after{
+    display:block;
+    clear:both;
+    content:"";
+}
+
+.rank-sec .rank-inner li{
+    width:25%;
+    padding:15px 0;
+    font-size:26px;
+}
+
+
+.rank-list ul:after{
+    clear:both;
+    display:block;
+    content:"";
+}
+.rank-list ul li{
+    list-style:none;
+    float:left;
+   width:32.8%;
+    padding:15px 0;
+    text-align:center;
+    position:relative;
+}
+
+.rank-list .rank-first li{
+    font-size:24px;
+}
+.rank-sec li{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.rank-sec .rank-pad,.rank-sec .rank-record-2,.rank-sec .rank-record-3{
+   padding:10px 0 0 0;
+}
+/*.rank-sec .rank-record-2{
+    padding:7px 0 23px 0 ;
+}
+.rank-sec .rank-record-3{
+    padding:7px 0 23px 0 ;
+}*/
+.rank-one-inner {
+    padding:19px 0;
+}
+.ranking-one{
+    background:#ea3232;
+}
+.ranking-one li,.second-rank .ranking-one{
+    font-weight:bold;
+    font-size:28px;
+}
+.ranking-two{
+     background:#ed9e21;
+}
+.ranking-two li,.second-rank .ranking-two{
+        font-size:26px;
+}
+.ranking-three {
+
+    background:#00d9a3;
+}
+.ranking-three li,.second-rank .ranking-three{
+        font-size:24px;
+}
+.ranking-four{
+
+    background:#0f5c95;
+}
+.ranking-four li,.second-rank .ranking-four{
+        font-size:20px;
+}
+
+.ranking-five{
+    background:#CCC;
+    opacity:0.8;
+}

@@ -1,0 +1,95 @@
+html{margin: 0;padding: 0;font: 12px Arial,"宋体",sans-serif;}
+body.login {position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;margin: 0;}
+body.login img.bg {position: absolute;width: 120%;height: 100%;top: 0;left: 0;z-index: 0;}
+body.login .header .nsfocus {border: none;position: absolute;top: 24px;left: 34px; width:117px; height:17px;}
+
+body.login .body {position:absolute;top: 27%;width: 100%; text-align:center;}
+body.login .body .logo {margin-left:-92px; }
+body.login .body fieldset {display:inline;position:relative; border:none; margin:0; padding:0; height:34px; line-height:34px; width:496px;background: url(../images/lm_login_input.png) no-repeat;background-position: center center; text-align:left;vertical-align:middle;}
+body.login .body label { margin:0 0 0 12px;color: #6DADC3;cursor: text; display:inline; padding:0!important;vertical-align:middle; position:absolute; z-index:20; }
+
+body.login .body  fieldset input {height:20px; line-height:20px;position:relative; left:0;border:none; background:url(images/transparent.gif) repeat; *background:none; width: 193px;color: #4B6E7D;cursor: text;  padding-left:3px;z-index:10;}
+/*
+body.login .body .submit {width:68px; position:absolute; left:416px; *left:414px; top:-2px; *top:0px; height:24px; line-height:24px;color: #02629e;text-align: center;cursor: pointer; background:none;}
+*/
+body.login .body .submit {width:68px; position:relative; left:auto;top:0px;height:22px; line-height:22px;color: #02629e;text-align: center;cursor: pointer; background:none; margin:6px 0 0 13px;*margin-left:8px;}
+
+body.login .body legend {display: none;}
+body.login .body .fieldset.error {background: url(../images/login/lm_login_input_prompt.png) no-repeat;background-position: center center;}
+
+body.login .cmn_form_err {margin:0;padding:0;position: relative;top: 33px;height: 22px;color: red;}
+body.login .cmn_form_err .errorfont {height:21px;position: relative;border: 1px solid #CADEE4;color: #16537A;display: inline-block; +display: inline;line-height: 21px;background: url(images/icon/error.gif) no-repeat #F1F5F6 7px 3px;margin: 0 0 0 0;zoom: 1;}
+body.login .cmn_form_err .errorfont .cor_left,body.login .cmn_form_err .errorfont .cor_right{position: absolute;top: -1px;left: -1px;background: url(images/login/login_msg_cor.gif) no-repeat;display: block;width: 3px;height: 22px;}
+body.login .cmn_form_err .errorfont  #error_text{height:21px;margin:0 5px 0 26px; line-height: 23px;*line-height:21px;overflow: hidden;}
+body.login .cmn_form_err .errorfont .cor_right {background-position: -3px 0;left: auto;right: -1px;-right: -2px;}
+body.login .copyright {display:inline-block;height:27px;line-height:27px;background: url(images/login/login_menu_3.gif) repeat;position: absolute;bottom: 24px;left: 34px;padding: 0 10px;color: #7F8689;}
+body.login .copyright  a {color: #0074aa;text-decoration: none;}
+body.login .copyright  span{}
+body.login .tools {line-height:27px;margin: 0;padding: 0;height: 27px;position: absolute;right: 36px;bottom: 24px;float: right;}
+body.login .tools .tool {height: 27px;background: url(images/login/login_menu_3.gif) repeat;cursor: pointer;float: left;position: relative;bottom:0;}
+body.login .tools .line {float: left;height: 27px;background: url(images/login/login_menu_1.gif) repeat;width: 1px;}
+body.login .tools .title {line-height:27px;height:27px;float: left;padding:0 10px 0 8px;cursor: pointer;overflow: hidden;color: #0074aa;position:relative;}
+body.login .tools .title span{line-height:27px;display:inline-block;}
+body.login .tools .title img{position:absolute; top:13px; padding-left:2px;}
+body.login .tools .tool  a {padding:0 8px;color: #0074aa; line-height:21px;height: 21px;width: auto;display: block;background-color: white;overflow: hidden;text-decoration: none;text-align: left;}
+body.login .tools .tool .choose_language{ display:inline-block;width:93px; height:27px;background:url(images/login/login_language.gif) no-repeat 0px -77px;}
+body.login .tools .tool img.choose_img{display:inline-block; position:absolute; top:13px;}
+body.login .tools .tool a.en{background:url(images/login/login_language.gif) no-repeat 8px -54px;}
+body.login .tools .tool a.cn2{background:url(images/login/login_language.gif) no-repeat 8px -28px;}
+body.login .tools .tool a.cn{background:url(images/login/login_language.gif) no-repeat 8px 0px;}
+body.login .tools .tool a.ja{background:url(images/login/login_language.gif) no-repeat 8px -102px;}
+body.login .tools .tool a:hover {background-color:#eaeaea;}
+body.login .tools .tool .list {right: 0;background-color: white;position: absolute;display: none;bottom: 27px;_bottom:26px;_right:-1px;}
+body.login .tools .tool.on .list {display: block;}
+.hide {display: none !important;}
+.off {visibility: hidden !important;}
+
+.login .username,.login .password{width:200px;display:inline-block;}
+.login .username label,.login .password label{width:200px;display:inline-block; *line-height:28px;}
+.login .username input{margin-left:8px;}
+.login .password input{margin-left:10px;}
+
+/*login.css update 20140731*/
+html{margin: 0;padding: 0;font: 12px Arial,"宋体",sans-serif;overflow: hidden;}
+.hide {display: none;}
+.off {visibility: hidden;}
+.nm-login{overflow: hidden;}
+.nm-login-bg {position: absolute;width: 120%;height: 100%;top: 0;left: 0;z-index: 0;}
+.nm-login-header .nsfocus {border: none;position: absolute;top: 24px;left: 34px; width:117px; height:17px;}
+.nm-login-body {position:absolute;top: 27%;width: 100%; text-align:center;}
+.nm-login .nm-login-body .logo {margin-left:-92px; }
+.nm-login .cmn_form_err {margin:0;padding:0;position: relative;top: 33px;height: 22px;color: red; background: none;}
+.nm-login .cmn_form_err .errorfont {height:21px;position: relative;border: 1px solid #CADEE4;color: #16537A;display: inline-block; +display: inline;line-height: 21px;background: url(images/icon/error.gif) no-repeat #F1F5F6 7px 3px;margin: 0 0 0 0;zoom: 1;}
+.nm-login .cmn_form_err .errorfont .cor_left,.nm-login .cmn_form_err .errorfont .cor_right{position: absolute;top: -1px;left: -1px;background: url(images/login/login_msg_cor.gif) no-repeat;display: block;width: 3px;height: 22px;}
+.nm-login .cmn_form_err .errorfont  #error_text{height:21px;margin:0 5px 0 26px; line-height: 23px;*line-height:21px;overflow: hidden;}
+.nm-login .cmn_form_err .errorfont .cor_right {background-position: -3px 0;left: auto;right: -1px;-right: -2px;}
+.nm-login .copyright {display:inline-block;height:27px;line-height:27px;background: url(images/login/login_menu_3.gif) repeat;position: absolute;bottom: 24px;left: 34px;padding: 0 10px;color: #7F8689;}
+.nm-login .copyright  a {color: #0074aa;text-decoration: none;}
+.nm-login .copyright  span{}
+.nm-login-tools {line-height:27px;margin: 0;padding: 0;height: 27px;position: absolute;right: 36px;bottom: 24px;float: right;}
+.nm-login-tools .tool {height: 27px;background: url(images/login/login_menu_3.gif) repeat;cursor: pointer;float: left;position: relative;bottom:0;}
+.nm-login-tools .line {float: left;height: 27px;background: url(images/login/login_menu_1.gif) repeat;width: 1px;}
+.nm-login-tools .title {line-height:27px;height:27px;float: left;padding:0 10px 0 8px;cursor: pointer;overflow: hidden;color: #0074aa;position:relative;}
+.nm-login-tools .title span{line-height:27px;display:inline-block;}
+.nm-login-tools .title img{position:absolute; top:13px; padding-left:2px;}
+.nm-login-tools .tool  a {padding:0 8px;color: #0074aa; line-height:21px;height: 21px;width: auto;display: block;background-color: white;overflow: hidden;text-decoration: none;text-align: left;}
+.nm-login-tools .tool .choose_language{ display:inline-block;width:93px; height:27px;background:url(images/login/login_language.gif) no-repeat 0px -77px;}
+.nm-login-tools .tool img.choose_img{display:inline-block; position:absolute; top:13px;}
+.nm-login-tools .tool a.en{background:url(images/login/login_language.gif) no-repeat 8px -54px;}
+.nm-login-tools .tool a.cn2{background:url(images/login/login_language.gif) no-repeat 8px -28px;}
+.nm-login-tools .tool a.cn{background:url(images/login/login_language.gif) no-repeat 8px 0px;}
+.nm-login-tools .tool a.ja{background:url(images/login/login_language.gif) no-repeat 8px -102px;}
+.nm-login-tools .tool a:hover {background-color:#eaeaea;}
+.nm-login-tools .tool .list {right: 0;background-color: white;position: absolute;display: none;bottom: 27px;_bottom:26px;_right:-1px;}
+.nm-login-tools .tool.on .list {display: block;}
+/*登陆区域样式*/
+.nm-login-fieldset {display:inline;position:relative; border:none; margin:0; padding:0; height:34px; line-height:34px; width:496px;background: url(../images/lm_login_input.png) no-repeat;background-position: center center; text-align:left;vertical-align:middle;}
+.nm-login-fieldset  legend {display: none;}
+.nm-login-fieldset.error {background: url(../images/login/lm_login_input_prompt.png) no-repeat;background-position: center center;}
+.nm-loginbox{position:absolute;width: 193px;height:20px;padding:0;}
+.nm-loginbox-username{left:6px;top:7px;}
+.nm-loginbox-password{left:213px;top:7px;}
+.nm-loginbox-button{left:420px;top:6px;}
+.nm-loginbox input{ position:absolute;left:0;top:0;width: 193px;height:20px; padding-left:3px;margin:0;z-index:10;border:none; background:url(images/transparent.gif) repeat; *background:none;color: #4B6E7D;cursor: text;line-height:20px;  }
+.nm-loginbox label{padding: 0!important;line-height: 14px;vertical-align: middle;}/*page.css样式中的冲突覆盖*/
+.nm-login .nm-login-body .submit {position:absolute; left:0;top:0;width:68px; height:22px; line-height:22px;color: #02629e;text-align: center;cursor: pointer; background:none;}

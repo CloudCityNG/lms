@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="综合评测 | 红客学院">
+<meta name="description" content="综合评测 | 红客学院">
+<meta name="keywords" content="综合评测 | 红客学院">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>综合评测 | 红客学院</title>
+<!–[if lt IE9]>
+<script src="app/core/styles/js/html5.js"></script>
+<![endif]–>
+<!-- Le styles -->
+<link href="app/core/styles/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="app/core/styles/css/layoutit.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="app/core/styles/js/jquery.min.js"></script>
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="app/core/styles/js/html5shiv.js"></script>
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<![endif]-->
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+</head><body>
+<div class="navbar navbar-inverse">	<div class="navbar-inner">		<div class="container-fluid">			<button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>			<a href="index.php?exam-master-basic" class="brand"><img src="app/core/styles/images/favicon.png">在线考试系统管理平台</a>			<div class="nav-collapse navbar-responsive-collapse collapse">				<ul class="nav">					<li>						<a href="index.php?user-master-user">用户管理</a>					</li>					<li>						<a href="index.php?exam-master-basic">考试管理</a>					</li>					<li class="active">						<a href="index.php?content-master-contents">内容管理</a>					</li>					<li>						<a href="index.php?bank-master-orders">订单管理</a>					</li>				</ul>				<ul class="nav pull-right">					<li>						<a href="index.php">网站首页</a>					</li>					<li class="divider-vertical">					</li>					<li class="dropdown">						<a data-toggle="dropdown" class="dropdown-toggle" href="#">admin<strong class="caret"></strong></a>						<ul class="dropdown-menu">							<!--							<li>								<a href="index.php?user-app-privatement">个人中心</a>							</li>							<li class="divider">							</li>							-->							<li>								<a href="index.php?core-master-logout">退出管理</a>							</li>						</ul>					</li>				</ul>			</div>		</div>	</div></div><div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span2">
+			<ul class="nav nav-tabs nav-stacked">	<li>		<a href="index.php?content-master">首页</a>	</li>	<li>		<a href="index.php?content-master-category">分类管理</a>	</li>	<li class="active">		<a href="index.php?content-master-contents">内容管理</a>	</li>	</ul>		</div>
+		<div class="span10" id="datacontent">
+			<ul class="breadcrumb">
+				<li><a href="index.php?content-master">内容模块</a> <span class="divider">/</span></li>
+				<li><a href="index.php?content-master-contents&page=1">内容管理</a> <span class="divider">/</span></li>
+				<li class="active">修改内容</li>
+			</ul>
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#">修改内容</a>
+				</li>
+				<li class="pull-right">
+					<a href="index.php?content-master-contents&catid=1&page=1">内容管理</a>
+				</li>
+			</ul>
+			<form action="index.php?content-master-contents-edit" method="post" class="form-horizontal">
+				<div class="control-group">
+		            <label for="contenttitle" class="control-label">标题：</label>
+		            <div class="controls">
+					    <input type="text" id="contenttitle" name="args[contenttitle]" needle="needle" msg="您必须输入标题" value="国家公务员最新时事：公务员轮岗“扫大街”还须理性看待">
+			        </div>
+		        </div>
+		        <!--
+		        <div class="controls">
+		            <label for="block" class="control-label">标题颜色：</label>
+		            <input type="text" name="args[contenttitle]" needle="needle" msg="您必须输入标题">
+		        </div>
+		        <div class="controls">
+		            <label for="block" class="control-label">标题加粗：</label>
+		            <input type="text" name="args[contenttitle]" needle="needle" msg="您必须输入标题">
+		        </div>
+
+		        <div class="control-group">
+		            <label for="contentmoduleid" class="control-label">模型：</label>
+		            <div class="controls">
+					    <select id="contentmoduleid" msg="您必须选择信息模型" refreshjs="on" needle="needle" class="combox" name="args[contentmoduleid]" refUrl="index.php?content-master-module-moduleforms&moduleid={value}" target="contentforms">
+			            	<option value="">选择信息模型</option>
+			            				            	<option value="4">新闻</option>
+			            				            </select>
+			        </div>
+		        </div>
+		        -->
+		        <div class="control-group">
+		            <label for="block" class="control-label">缩略图：</label>
+		            <div class="controls">
+			            <div class="thumbuper pull-left">
+							<div class="thumbnail">
+								<a href="javascript:;" class="second label""><em class="uploadbutton" id="contentthumb" exectype="thumb"></em></a>
+								<div class="first" id="contentthumb_percent"></div>
+								<div class="boot"><img src="app/core/styles/images/noimage.gif" id="contentthumb_view"/><input type="hidden" name="args[contentthumb]" value="" id="contentthumb_value"/></div>
+							</div>
+						</div>
+					</div>
+		        </div>
+		        <div class="control-group">
+		            <label for="contentlink" class="control-label">站外链接：</label>
+		            <div class="controls">
+					    <input type="text" id="contentlink" name="args[contentlink]" value="">
+			        </div>
+		        </div>
+		        <div class="control-group">
+		            <label for="contentdescribe" class="control-label">摘要：</label>
+		            <div class="controls">
+					    <textarea id="contentdescribe" class="input-xxlarge" name="args[contentdescribe]" rows="7" cols="4">当然，群众的质疑，也是可以理解的。在官场的潜规则依然存在的当下，确实有一些领导干部和机关工作人员为了往自己脸上“贴金”，热衷于政绩工程和形式主义，频繁在群众面前“作秀”，于是乎疏远了干群关系，影响了公务员在群众中的整体形象。以至于，当公务员上街扫地时，就算扫得再卖力气，在群众的眼中也不是实干，而是在“走过场”、做“面子工程”。
+这就要求广大公务员，一方面要把扫地的义务劳动坚持下去，利用空余时间主动为群众当义工，百姓见到了公务员们的诚心必然会回以赞许;另一方面，要树立问题意识，面对劳动中所发现的城市建设问题及群众的困难，要勇于面对，积极解决，努力补齐城市建设中的短板，让群众方便、舒适地生活。与此同时，要科学配置时间和人员，提升工作和劳动效率，切实做到工作、劳动“两不误”。相信，多管齐下，广大群众一定可以切实感受到公务员的真心和诚意，公务员群体在群众中的形象和政府公信力的重塑也一定可以实现。</textarea>
+			        </div>
+		        </div>
+    					    	<div class="control-group">
+		            <label for="contenttext" class="control-label">内容</label>
+		            <div class="controls">
+					    <textarea id="contenttext" rows="7" cols="4" class="ckeditor" name="args[contenttext]">&lt;p style=&quot;font-size: 14px; font-family: 宋体; margin-right: auto; margin-bottom: 0px; margin-left: auto; padding: 0px; list-style: none; line-height: 27px; text-indent: 28px; color: rgb(0, 0, 0);&quot;&gt;当然，群众的质疑，也是可以理解的。在官场的潜规则依然存在的当下，确实有一些领导干部和机关工作人员为了往自己脸上&amp;ldquo;贴金&amp;rdquo;，热衷于政绩工程和形式主义，频繁在群众面前&amp;ldquo;作秀&amp;rdquo;，于是乎疏远了干群关系，影响了公务员在群众中的整体形象。以至于，当公务员上街扫地时，就算扫得再卖力气，在群众的眼中也不是实干，而是在&amp;ldquo;走过场&amp;rdquo;、做&amp;ldquo;面子工程&amp;rdquo;。&lt;/p&gt;
+
+&lt;p style=&quot;font-size: 14px; font-family: 宋体; margin-right: auto; margin-bottom: 0px; margin-left: auto; padding: 0px; list-style: none; line-height: 27px; text-indent: 28px; color: rgb(0, 0, 0);&quot;&gt;这就要求广大公务员，一方面要把扫地的义务劳动坚持下去，利用空余时间主动为群众当义工，百姓见到了公务员们的诚心必然会回以赞许;另一方面，要树立问题意识，面对劳动中所发现的城市建设问题及群众的困难，要勇于面对，积极解决，努力补齐城市建设中的短板，让群众方便、舒适地生活。与此同时，要科学配置时间和人员，提升工作和劳动效率，切实做到工作、劳动&amp;ldquo;两不误&amp;rdquo;。相信，多管齐下，广大群众一定可以切实感受到公务员的真心和诚意，公务员群体在群众中的形象和政府公信力的重塑也一定可以实现。&lt;/p&gt;</textarea>
+			        </div>
+		        </div>
+		        <div class="control-group">
+		            <label for="contenttemplate" class="control-label">模版：</label>
+		            <div class="controls">
+					    <select name="args[contenttemplate]" id="contenttemplate">
+			            				            	<option value="content_default">content_default</option>
+			            				            </select>
+			        </div>
+		        </div>
+		        <div class="control-group">
+		            <div class="controls">
+			            <button class="btn btn-primary" type="submit">提交</button>
+			            <input type="hidden" name="contentid" value="1">
+			            <input type="hidden" name="gotopos" value="1">
+			            <input type="hidden" name="submit" value="1">
+			        </div>
+		        </div>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>

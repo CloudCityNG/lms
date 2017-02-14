@@ -1,0 +1,32 @@
+/* CSS Document */
+*{ padding:0; margin:0;}
+font{ font-size:14px; font-family:Arial; font-family:"微软雅黑";}
+.gry{ color:#999; }
+.f16{ font-size:16px;}
+.f26{ font-size:26px;}
+.f20{ font-size:20px;}
+a{ color:#FFF; text-decoration:none; line-height:40px; font-weight:bold; margin-left:20px;}
+a:hover{ color:#0C9}
+
+.top{ width:100%; height:800px; text-align:center; }
+.top_login{ width:1200px; height:355px; margin:0 auto; background:url(../images/gfdks_02.jpg);}
+.top_login ul{ width:400px; float:right; margin:20px 0 0 0; font-family:"微软雅黑"; } 
+.top_login input{ width:230px; height:30px; float:left; margin-bottom:20px; padding-left:10px; }
+.top_login input.btn{ background:url(../images/input_bg.jpg); width:145PX; color:#FFF;  font-family:"微软雅黑"; }
+
+.top_index{ background:url(../images/index_top_01_stu.jpg); background-size:cover;width:100%; height:146px; border-bottom:#006 3px solid;} 
+.top_index ul{ font-family:"微软雅黑"; float:right; width:100px; }
+.top_index ul a{ color:#FFF; text-decoration:none;line-height:180px;}
+
+.mean{ background:url(../images/bj.jpg) no-repeat; height:auto; border-top:3px #000 solid;}
+.mean_left{ width:240px; float:left; background:#006; height:600px; padding-top:20px;}
+.mean_left li{ background:url(../images/li_bj.jpg); height:50px;  width:186px; height:56px; margin:10px 0  0  20px; list-style:none; }
+.mean_left li a{ line-height:60px;}
+.area{ float:left; width:800px;}
+
+.sum{ width:80%; margin:0 auto; font-size:16px; padding:30px; color:#FFF; font-family:"微软雅黑";}
+.area ul.jianjie{ width:900px; padding:30px 80px 0 80px; font-family:"微软雅黑"; text-indent:28px; color:#FFF;}
+.area ul.jianjie p span{ width:900px; float:left; margin-left:30px; text-indent:0px; padding-top:10px; color:#e2e2e2; clear:both;}
+.fbb{ font-weight:bold;}
+.fblue{ color:#58D6D6;}
+.t30{ margin-top:30px;}

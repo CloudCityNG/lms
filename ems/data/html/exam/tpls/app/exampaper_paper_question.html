@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="title" content="综合评测 | 红客学院">
+<meta name="description" content="综合评测 | 红客学院">
+<meta name="keywords" content="综合评测 | 红客学院">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>综合评测 | 红客学院</title>
+<link href="app/core/styles/css/bootstrap.css" rel="stylesheet">
+<link href="app/core/styles/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="app/core/styles/css/plugin.css" rel="stylesheet">
+<link href="app/user/styles/css/theme.css" rel="stylesheet" type="text/css" />
+<link href="app/core/styles/css/datetimepicker.css" rel="stylesheet">
+<script type="text/javascript" src="app/core/styles/js/jquery-1.9.1.min.js"></script>
+<link rel="stylesheet" href="app/exam/styles/css/mathquill.css" type="text/css">
+<script type="text/javascript" src="app/core/styles/js/jquery-ui.js"></script>
+<script type="text/javascript" src="app/core/styles/js/jquery.json.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="app/core/styles/js/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="app/core/styles/js/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="app/core/styles/js/swfu/swfupload.js"></script>
+<!--
+<script type="text/javascript" src="app/core/styles/js/fingerprint/fingerprint.js"></script>
+<script type="text/javascript" src="app/core/styles/js/fingerprint/plugin.js"></script>
+-->
+<script type="text/javascript" src="app/core/styles/js/plugin.js"></script>
+<script src="app/exam/styles/js/plugin.js"></script>
+</head><body>
+<div class="row-fluid top">
+    <div class="logo">
+      <a href="/edusoho/web/">
+          <img style="" src="app/user/styles/img/theme/edu.png" />
+      </a>
+    </div>
+    <ul  class="nav-top">
+        <li><a href="/course/explore">课程 </a></li>
+        <li><a href="/ems">综合评测 </a></li>
+        <li><a href="http://www.cnhongke.org">红客训练营 </a></li>
+        <li><a href="/page/knowledgeSystem">知识体系 </a></li>
+        <li><a href="/page/service">安全服务 </a></li>
+        <li><a href="/article">安全资讯  </a></li>
+        <li><a href="/page/aboutus">关于我们  </a></li>
+    </ul>
+    <div>
+    <ul class="nav-user">
+              
+        <li><a href="/my"><em class="icon-user"></em> 我的学习</a></li>
+                      &nbsp;&nbsp;<li><a href="http://sso.51elab.com/sso/logout.51elab?c=http://edu.51elab.com/ems" class="noneajax"><em class="icon-lock"></em> 退出</a></li>
+                        <li>您好（weihw）&nbsp;&nbsp;</li>
+	    </ul>
+    </div>
+</div>
+<style>
+    .logo{
+        position: absolute;top: 0; left: 0;
+    }
+    .logo a{
+        height: 60px;line-height: 50px;padding: 4px 32px;color: #fff;
+    }
+    .logo img{
+    height: 50px;width: auto;padding-top: 6px;
+    }
+a{
+color: #c1c1c1;
+}
+a:hover{
+color:#fff;
+}
+.nav-top{
+padding-left: 150px;padding-top: 16px;
+}
+ .nav-top li{
+     float:left;list-style:none;
+ }
+.nav-top li a {
+    padding: 20px 30px;
+    line-height: 20px;
+    color: #c1c1c1;
+    background: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.nav-top li a:hover{
+    color:#fff;
+}
+.nav-user li{
+float:right;list-style: none;padding-right:30px; margin-top: -8px;
+}
+nav-user li a{
+    padding: 20px 15px;
+    color: #c1c1c1;
+}
+</style><div aria-hidden="true" id="modal" class="modal hide fade" role="dialog" aria-labelledby="#myModalLabel">
+	<div class="modal-header">
+		<button aria-hidden="true" class="close" type="button" data-dismiss="modal">×</button>
+		<h3 id="myModalLabel">
+			试题列表
+		</h3>
+	</div>
+	<div class="modal-body" id="modal-body" style="max-height:560px;">
+				    					    					        <dl class="clear">
+        	<dt class="float_l"><b>1、单选题</b></dt>
+            <dd>
+            	                                                            	<a id="sign_229" href="javascript:;" onclick="javascript:gotoquestion(229,1);" rel="0" class="badge questionindex">1</a>
+            	            	            </dd>
+        </dl>
+        		        				    			        				    					        <dl class="clear">
+        	<dt class="float_l"><b>2、判断题</b></dt>
+            <dd>
+            	                                                            	<a id="sign_765" href="javascript:;" onclick="javascript:gotoquestion(765,3);" rel="0" class="badge questionindex">1</a>
+            	            	            </dd>
+        </dl>
+        		        				    			        				    			        				    			        	</div>
+	<div class="modal-footer">
+		 <button aria-hidden="true" class="btn" data-dismiss="modal">隐藏</button>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="container-fluid examcontent">
+		<div class="exambox" id="datacontent">
+			<form class="examform form-horizontal" id="form1" name="form1" method="post" action="index.php?exam-app-exampaper-score">
+				<ul class="breadcrumb">
+					<li>
+						<span class="icon-home"></span> <a href="index.php?exam">考场选择</a> <span class="divider">/</span>
+					</li>
+					<li>
+						<a href="index.php?exam-app-basics">入侵的艺术</a> <span class="divider">/</span>
+					</li>
+					<li>
+						<a href="index.php?exam-app-exampaper">模拟考试</a> <span class="divider">/</span>
+					</li>
+					<li class="active">
+						aaa					</li>
+				</ul>
+				<h3 class="text-center">aaa</h3>
+														    			    			    									<div id="panel-type-1" class="questionpanel tab-pane active">
+					<ul class="breadcrumb">
+						<li>
+							<h5>1、单选题</h5>
+						</li>
+					</ul>
+						                	                	                	                <div id="question_229" class="paperexamcontent">
+						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-info questionindex">1</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:signQuestion('229',this);"><em class="icon-star-empty" title="标注"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_229"></a><p>各级纪律检查委员会要经常对党员进行（）的教育。</p><input id="time_229" type="hidden" name="time[229]"/>
+							</div>
+																					<div class="media-body well noborder">
+		                    	<p>A、爱国主义</p>
+
+<p>B、遵守纪律</p>
+
+<p>C、道德品质</p>
+
+<p>D、思想政治</p>		                    </div>
+		                    							<div class="media-body well">
+		                    				                        			                        			                        <label class="checkbox inline"><input type="checkbox" name="question[229][0]" rel="229" value="A" />A </label>
+			                        			                        			                        <label class="checkbox inline"><input type="checkbox" name="question[229][1]" rel="229" value="B" />B </label>
+			                        			                        			                        <label class="checkbox inline"><input type="checkbox" name="question[229][2]" rel="229" value="C" />C </label>
+			                        			                        			                        <label class="checkbox inline"><input type="checkbox" name="question[229][3]" rel="229" value="D" />D </label>
+			                        			                        			                        		                        		                    </div>
+														<div class="media-body well">
+								<div class="btn-group pull-right">
+				            						            						            		<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion(1,1);" title="下一题">下一题</a>
+													            	</div>
+			            	</div>
+						</div>
+					</div>
+														</div>
+														    			    			    											    			    			    									<div id="panel-type-3" class="questionpanel tab-pane">
+					<ul class="breadcrumb">
+						<li>
+							<h5>2、判断题</h5>
+						</li>
+					</ul>
+						                	                	                	                <div id="question_765" class="paperexamcontent">
+						<div class="media well">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<span class="badge badge-info questionindex">1</span></a>
+								</li>
+								<li class="btn-group pull-right">
+									<button class="btn" type="button" onclick="javascript:signQuestion('765',this);"><em class="icon-star-empty" title="标注"></em></button>
+								</li>
+							</ul>
+							<div class="media-body well text-warning">
+								<a name="question_765"></a><p>文化是民族的血脉和人民的精神家园。</p><input id="time_765" type="hidden" name="time[765]"/>
+							</div>
+																					<div class="media-body well noborder">
+		                    	<p>A、对B、错</p>		                    </div>
+		                    							<div class="media-body well">
+		                    				                        			                        			                        <label class="checkbox inline"><input type="checkbox" name="question[765][0]" rel="765" value="A" />A </label>
+			                        			                        			                        <label class="checkbox inline"><input type="checkbox" name="question[765][1]" rel="765" value="B" />B </label>
+			                        			                        			                        		                        		                    </div>
+														<div class="media-body well">
+								<div class="btn-group pull-right">
+				            						            		<a class="btn" href="javascript:;" onclick="javascript:gotoindexquestion(0,3);" title="上一题">上一题</a>
+				            						            						            	</div>
+			            	</div>
+						</div>
+					</div>
+														</div>
+														    			    			    											    			    			    											    			    			    													<div aria-hidden="true" id="submodal" class="modal hide fade" role="dialog" aria-labelledby="#mySubModalLabel">
+					<div class="modal-header">
+						<button aria-hidden="true" class="close" type="button" data-dismiss="modal">×</button>
+						<h3 id="mySubModalLabel">
+							交卷
+						</h3>
+					</div>
+					<div class="modal-body" id="modal-body" style="max-height:100%;">
+						<p>共有试题 <span class="allquestionnumber">50</span> 题，已做 <span class="yesdonumber">0</span> 题。您确认要交卷吗？</p>
+					</div>
+					<div class="modal-footer">
+						 <button type="button" onclick="javascript:submitPaper();" class="btn btn-primary">确定交卷</button>
+						 <input type="hidden" name="insertscore" value="1"/>
+						 <button aria-hidden="true" class="btn" type="button" data-dismiss="modal">再检查一下</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="row-fluid">
+	<div class="toolcontent">
+		<div class="container-fluid footcontent">
+			<div class="span2">
+				<ul class="unstyled">
+					<li><h4><img src="app/core/styles/images/icons/Watches.png" style="width:1.3em;"/> <span id="timer_h">00</span>：<span id="timer_m">00</span>：<span id="timer_s">00</span></h4></li>
+				</ul>
+			</div>
+			<div class="span2">
+				<ul class="unstyled">
+					<li><h6><a href="#top"><em class="icon-circle-arrow-up"></em>回顶部</a> &nbsp; <a href="#modal" data-toggle="modal"><em class="icon-calendar"></em>试题列表</a></h6></li>
+				</ul>
+			</div>
+			<div class="span6">
+				<ul class="unstyled">
+					<li><h6>已做 <span class="yesdonumber">0</span> 题 共 <span class="allquestionnumber">50</span> 题 总分：<span class="orange">100</span>分 合格分数线：<span class="orange">60</span>分 考试时间：<span class="orange">60</span>分钟</h6></li>
+				</ul>
+			</div>
+			<div class="span2">
+				<ul class="unstyled">
+					<li class="text-right"><a href="#submodal" role="button" class="btn btn-primary" data-toggle="modal"> 交 卷 </a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+function gotoquestion(questid,questypeid)
+{
+	$(".questionpanel").hide();
+	$(".paperexamcontent").hide();
+	$("#panel-type-"+questypeid).show();
+	$("#question_"+questid).show();
+	$('#modal').modal('hide');
+}
+function gotoindexquestion(index)
+{
+	$(".questionpanel").hide();
+	$(".paperexamcontent").hide();
+	$(".paperexamcontent").eq(index).show();
+	$(".paperexamcontent").eq(index).parents(".questionpanel").show();
+}
+$(document).ready(function(){
+	$.get('index.php?exam-app-index-ajax-lefttime&rand'+Math.random(),function(data){
+		var setting = {
+						time:60,
+						hbox:$("#timer_h"),
+			mbox:$("#timer_m"),
+			sbox:$("#timer_s"),
+			finish:function(){submitPaper();}
+		}
+		setting.lefttime = parseInt(data);
+		countdown(setting);
+	});
+
+	var m = function(){
+		$(".questionpanel").hide();
+		$(".questionpanel:first").show();
+		$(".paperexamcontent").hide();
+		$(".paperexamcontent:first").show();
+	};
+	m();
+	//setInterval(refreshRecord,15000);
+	setInterval(saveanswer,300000);
+
+	$('.allquestionnumber').html($('.paperexamcontent').length);
+	$('.yesdonumber').html($('#modal-body .badge-info').length);
+
+	initData = $.parseJSON(storage.getItem('questions'));
+	if(initData){
+		for(var p in initData){
+			if(p!='set')
+			formData[p]=initData[p];
+			$("#time_"+$('[name="'+p+'"]').attr('rel')).val(initData[p].time);
+		}
+
+		var textarea = $('#form1 textarea');
+		$.each(textarea,function(){
+			var _this = $(this);
+			if(initData[_this.attr('name')])
+			{
+				_this.val(initData[_this.attr('name')].value);
+				CKEDITOR.instances[_this.attr('id')].setData(initData[_this.attr('name')].value);
+				if(initData[_this.attr('name')].value && initData[_this.attr('name')].value != '')
+				batmark(_this.attr('rel'),initData[_this.attr('name')].value);
+			}
+		});
+
+		var texts = $('#form1 :input[type=text]');
+		$.each(texts,function(){
+			var _this = $(this);
+			if(initData[_this.attr('name')])
+			{
+				_this.val(initData[_this.attr('name')]?initData[_this.attr('name')].value:'');
+				if(initData[_this.attr('name')].value && initData[_this.attr('name')].value != '')
+				batmark(_this.attr('rel'),initData[_this.attr('name')].value);
+			}
+		});
+
+		var radios = $('#form1 :input[type=radio]');
+		$.each(radios,function(){
+			var _= this, v = initData[_.name]?initData[_.name].value:null;
+			var _this = $(this);
+			if(v!=''&&v==_.value){
+				_.checked = true;
+				batmark(_this.attr('rel'),initData[_this.attr('name')].value);
+			}else{
+				_.checked=false;
+			}
+		});
+
+		var checkboxs=$('#form1 :input[type=checkbox]');
+		$.each(checkboxs,function(){
+			var _=this,v=initData[_.name]?initData[_.name].value:null;
+			var _this = $(this);
+			if(v!=''&&v==_.value){
+				_.checked=true;
+				batmark(_this.attr('rel'),initData[_this.attr('name')].value);
+			}else{
+				_.checked=false;
+			}
+		});
+	}
+
+	$('#form1 :input[type=text]').change(function(){
+		var _this=$(this);
+		var p=[];
+		p.push(_this.attr('name'));
+		p.push(_this.val());
+		p.push(Date.parse(new Date())/1000);
+		$('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
+		set.apply(formData,p);
+		markQuestion(_this.attr('rel'),true);
+	});
+
+	$('#form1 :input[type=radio]').change(function(){
+		var _=this;
+		var _this=$(this);
+		var p=[];
+		p.push(_.name);
+		if(_.checked){
+			p.push(_.value);
+			p.push(Date.parse(new Date())/1000);
+			$('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
+			set.apply(formData,p);
+		}else{
+			p.push('');
+			p.push(null);
+			set.apply(formData,p);
+		}
+		markQuestion(_this.attr('rel'));
+	});
+
+	$('#form1 textarea').change(function(){
+		var _= this;
+		var _this=$(this);
+		var p=[];
+		p.push(_.name);
+		p.push(_.value);
+		p.push(Date.parse(new Date())/1000);
+		$('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
+		set.apply(formData,p);
+		markQuestion(_this.attr('rel'),true);
+	});
+
+	$('#form1 :input[type=checkbox]').change(function(){
+		var _= this;
+		var _this = $(this);
+		var p=[];
+		p.push(_.name);
+		if(_.checked){
+			p.push(_.value);
+			p.push(Date.parse(new Date())/1000);
+			$('#time_'+_this.attr('rel')).val(Date.parse(new Date())/1000);
+			set.apply(formData,p);
+		}else{
+			p.push('');
+			p.push(null);
+			set.apply(formData,p);
+		}
+		markQuestion(_this.attr('rel'));
+	});
+});
+</script>
+ <footer class="es-footer">
+  <div class="copyright">
+    <div class="container">
+        Copyright&copy;2012-2016 51elab.com
+      <div class="mts">
+               北京易霖博信息技术有限公司 版权所有 京ICP备14033476号
+       </div>
+    </div>
+  </div>
+</footer>
+<script type="text/javascript">
+$(".thumbnails img").bind("error",function(){$(this).attr("src","app/core/styles/images/icons/Book.png?"+Math.random());});
+</script>
+<style>
+    .container{
+    width:100%;
+    }
+    .es-footer .copyright {
+        width:100%;
+    background: #212121;
+    border-top: 1px solid #444;
+    text-align: center;
+    padding: 20px 0;
+    line-height: 30px;
+    color: #c1c1c1;
+}
+</style></body>
+</html>
